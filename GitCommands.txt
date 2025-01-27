@@ -73,18 +73,77 @@ git config --global core.autocrlf input   -----------for linux,mac
   git rm --cached -r bin/
   
   
+  github.com/gitignore  -- to get details of all programming language ignore pattern
+  
  
+ -----------------------------short status ------------------------------------------- 
+ git status -s 
+ 
+M  GitCommands.txt
+AM q.txt
+
+ left column - in stage
+ right column - not in stage
+ 
+ M- modified
+ A- added
+ ? - not staged 
+ 
+ 
+ --------------------------------View staged and unstaged file changes----------------------------------------
+ ---to get all details of staged and commited files
+ git diff --staged
+ 
+ --differenece in staged and unstaged
+ git diff 
+ 
+ 
+ ---------------------------visual diff tools--------------------------------------------- 
+ git config --global diff.tool vscode
+ 
+ git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+ 
+  git config --global -e
   
+  after openining gitconifg in vscode 
+  [difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+	
+	add the missing local and remote manually
+	
+	
+git difftool
+--for staged and unstaged
+
+git difftool --staged
+ --------------------------viewing the history----------------------------------------------
+ git log
+git log --oneline
+ git log --oneline --reverse
+ 
+ 
+ -----------------------------viewing the commit------------------------------------------- 
+ git show e9791a3
+ 
+ git show Head~1
+ 
+  git show Head~1:.gitignore
   
-  
-  
-  
- ------------------------------------------------------------------------ 
- ------------------------------------------------------------------------
- ------------------------------------------------------------------------ 
- ------------------------------------------------------------------------
- ------------------------------------------------------------------------ 
- ------------------------------------------------------------------------
+ git ls-tree Head~1
+
+blobs - file
+Trees - Dir
+
+
+ --------------------------------unstaging changes----------------------------------------
+ git restore 
+ 
+ git restore --staged GitCommands.txt
+ 
+ git restore --staged .
+ 
+ 
+ 
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
