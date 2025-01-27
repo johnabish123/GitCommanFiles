@@ -35,10 +35,13 @@ git config --global core.autocrlf input   -----------for linux,mac
  
  git commit -m "our commit comment"
  
- git commit                 -----to add more detailss. opens the vs . then save and close file which is opened to commit
+ git commit     -----to add more detailss. opens the vs . then save and close file which is opened to commit
  
  -------------------------- Skipping the area----------------------------------------------
- ------------------------------------------------------------------------
+ git commit -am "just a direct commit test messgae"
+ 
+ -------------------------------Removing fiels-----------------------------------------
+ 
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
