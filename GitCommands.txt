@@ -223,6 +223,13 @@ Trees - Dir
  
  git branch -M main
  git branch -M branch2
+ git add .
+ git commit -m "adding from branch2 .working with git remote b
+ ranches"
+ git push -u origin branch2
+ 
+  git branch -M branch3
+  
  
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
