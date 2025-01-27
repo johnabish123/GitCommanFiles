@@ -22,6 +22,8 @@ git config --global core.autocrlf input   -----------for linux,mac
  ls 
  ls -a
  
+  git ls-files  
+ 
  ------------remove git -------------------------------------------------
  rm -rf .git
  
@@ -49,6 +51,7 @@ git config --global core.autocrlf input   -----------for linux,mac
  git rm file2.txt
  git commit -am "remove file2 directly using git rm"
  
+ git rm -h
  
  ----------------------renaming or moving files-------------------------------------------------- 
  mv file.txt h.txt
@@ -59,6 +62,23 @@ git config --global core.autocrlf input   -----------for linux,mac
  echo logs/ > .gitignore
   code .gitignore
   git commit -am "add git ignore"
+  
+ -------to ignore file which is already committed----
+ --  use git rm -h
+ 
+ 
+ git rm --cached a.txt
+ 
+ --to remove dir from index
+  git rm --cached -r bin/
+  
+  
+ 
+  
+  
+  
+  
+  
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
