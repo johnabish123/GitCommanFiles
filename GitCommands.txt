@@ -136,19 +136,69 @@ Trees - Dir
 
 
  --------------------------------unstaging changes----------------------------------------
- git restore 
- 
+
+ --from last staged to unstage
  git restore --staged GitCommands.txt
+ 
  
  git restore --staged .
  
  
  
+ ---------------------------discarding local changes--------------------------------------------- 
+ 
+ --from stage to local
+ git restore GitCommands.txt
+ 
+  git clean -fd
+  
+  
+ -------------restoring file to an earlier status-----------------------------------------------------------
+ git restore --source Head~1 a.txt
  ------------------------------------------------------------------------ 
- ------------------------------------------------------------------------
- ------------------------------------------------------------------------ 
- ------------------------------------------------------------------------
- ------------------------------------------------------------------------ 
+ 
+ Browsing history
+ Branching and merging
+ collaboration
+ rewriting history
+ 
+ 
+ ----------------------------------------------
+ 
+ end of mosh course
+ 
+ 
+ 
+ 
+ ----------------------------------git merge rebase squash--------------------------------------
+ git merge  - make a knot between main and feature branch
+ when commit , , one merge commit will be added 
+ this will make a mess in history of commit
+ 
+ 
+ git rebase -  moved the feature branch into the tip of the main branch -fast forward merge
+ when doing this , all the feature branch commit will be converted into 
+ single line of history 
+ easy to maintain a history
+ 
+ 
+ squahs
+ 
+ it squashes all commit to the last commit of the main bracnhc?
+ 
+ like a - f ,b - f ,c - f
+ 
+ we will loose the history of commit of feature branch
+ 
+ 
+ -----------------------------branches------------------------------------------- 
+ --start braqnch from main
+ git branch JohnBranch
+ 
+ 
+ --to start git branch previous or another commit
+ git branch second-branch dd833f
+
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
