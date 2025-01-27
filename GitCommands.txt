@@ -47,6 +47,9 @@ git config --global core.autocrlf input   -----------for linux,mac
  git commit -m "remove the file2"
  
  git rm file2.txt
+ git commit -am "remove file2 directly using git rm"
+ 
+ 
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
