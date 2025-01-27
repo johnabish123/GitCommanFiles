@@ -41,7 +41,12 @@ git config --global core.autocrlf input   -----------for linux,mac
  git commit -am "just a direct commit test messgae"
  
  -------------------------------Removing fiels-----------------------------------------
+ rm file2.txt
+ git add .
+ git status
+ git commit -m "remove the file2"
  
+ git rm file2.txt
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
