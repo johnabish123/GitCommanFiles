@@ -208,7 +208,7 @@ Trees - Dir
  
  --to start git branch previous or another commit
  git branch second-branch dd833f
-<<<<<<< HEAD
+ HEAD
 
 =======
  ------------------------------------------------------------------------
@@ -226,9 +226,31 @@ Trees - Dir
  --------------------------------check out ----------------------------------------
  
  git checkout fifth-branch
+<<<<<<< HEAD
  git switch 
 >>>>>>> 0a6c681 (commit from fith branch)
  ------------------------------------------------------------------------ 
+=======
+ git switch third-branch
+ 
+ --rename 
+ git branch -m fifth-branch2
+ 
+ git branch
+ git branch -m fourth-branch fourth-branch2
+ 
+ 
+ 
+ 
+ 
+ ---------------------working wiht git remote branches--------------------------------------------------- 
+ 
+ git remote add origin https://github.com/johnabish123/GitCommanFiles.git
+ 
+ git branch -M main
+ git branch -M branch2
+ 
+>>>>>>> e2b3db2 (adding from branch2 .working with git remote branches)
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
