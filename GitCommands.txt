@@ -226,9 +226,9 @@ Trees - Dir
  --------------------------------check out ----------------------------------------
  
  git checkout fifth-branch
-<<<<<<< HEAD
+ HEAD
  git switch 
->>>>>>> 0a6c681 (commit from fith branch)
+ 0a6c681 (commit from fith branch)
  ------------------------------------------------------------------------ 
 =======
  git switch third-branch
@@ -256,9 +256,28 @@ Trees - Dir
  
   git branch -M branch3
   
+ git push origin --delete branch3
  
->>>>>>> e2b3db2 (adding from branch2 .working with git remote branches)
+HEAD
+ e2b3db2 (adding from branch2 .working with git remote branches)
  ------------------------------------------------------------------------
+=======
+ --this will push the local branch to remote , which makes the branch3 as a local and remote one
+ git push -u origin branch3
+ 
+ 
+ --pushing local branch to remote, this command will make a branch on remote
+ git push -u origin mybranch
+ 
+ 
+ 
+ 
+ 
+ -----------------------------------tracking branches-------------------------------------
+  git branch --track branch2 origin/branch2
+  git branch
+  
+ 11f8400 (tracking branches)
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
