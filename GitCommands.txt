@@ -304,8 +304,27 @@ git push  origin --delete branch4
  
  
  
->>>>>>> 6d7d094 (beofre MErging BRanches)
+ HEAD
+ 6d7d094 (beofre MErging BRanches)
  ------------------------------------------------------------------------ 
+=======
+ branch3
+
+git switch master
+git merge branch3
+git status
+git add .
+git commit -m "Merging again branch 3 with master"
+git status
+git branch -v
+
+
+
+ ------------------------Rebasing Branches------------------------------------------------ 
+ 
+ 
+ 
+>>>>>>> 7da4eea (before rebase)
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
