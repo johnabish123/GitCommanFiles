@@ -324,8 +324,21 @@ git branch -v
  
  
  
->>>>>>> 7da4eea (before rebase)
- ------------------------------------------------------------------------
+ 7da4eea (before rebase)
+
+git rebase second-branch
+git commit -m "rebasing master to second branch"
+git rebase --continue
+
+--similiarly solve all the errors in the rebasing progress , then ll the files will be merged
+
+
+
+ -----------------------------log-------------------------------------------
+ git log master..branch3
+ git log origin/main..master 
+ 
+ 
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
