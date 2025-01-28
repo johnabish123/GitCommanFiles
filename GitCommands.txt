@@ -169,8 +169,11 @@ Trees - Dir
  
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8ddcd41 (before creating new branch)
+=======
+>>>>>>> 0a6c681 (commit from fith branch)
  
  
  
@@ -196,13 +199,16 @@ Trees - Dir
  
  
  -----------------------------branches------------------------------------------- 
-<<<<<<< HEAD
+ HEAD
+=======
+ 0a6c681 (commit from fith branch)
  --start braqnch from main
  git branch JohnBranch
  
  
  --to start git branch previous or another commit
  git branch second-branch dd833f
+<<<<<<< HEAD
 
 =======
  ------------------------------------------------------------------------
@@ -212,6 +218,16 @@ Trees - Dir
  
 8ddcd41 (before creating new branch)
  ------------------------------------------------------------------------
+=======
+ 
+ 
+ 
+
+ --------------------------------check out ----------------------------------------
+ 
+ git checkout fifth-branch
+ git switch 
+>>>>>>> 0a6c681 (commit from fith branch)
  ------------------------------------------------------------------------ 
  ------------------------------------------------------------------------
  ------------------------------------------------------------------------ 
